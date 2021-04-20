@@ -1,6 +1,8 @@
 /* ===================================== 
   BASE STYLES
 ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +16,7 @@ body {
 .main-header,
 .main-nav {
   display: flex;
+  margin-top: 10px;
 }
 
 .main-nav {
@@ -24,6 +27,8 @@ input {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 300px;
+  font-family: 'Roboto-Mono';
+  height: 38px;
 }
 
 /* ===================================== 
@@ -46,6 +51,7 @@ input {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  box-shadow: 10px 6px 5px;
 }
 
 footer {
@@ -69,6 +75,7 @@ footer {
 .open {
   visibility: visible;
 }
+
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -88,9 +95,7 @@ footer {
   right: 10px;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
+.close:hover {
   text-decoration: none;
   cursor: pointer;
 }
@@ -98,7 +103,7 @@ footer {
 .modal-img {
   display: block;
   margin: 0 auto;
-  height: 100%;
+  height: 250px;
   width: 100%;
 }
 
@@ -128,6 +133,14 @@ footer {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .close {
+    top: 100px;
+  }
+
+  .modal-img {
+    height: 100%;
   }
 }
 

@@ -7,17 +7,19 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Image gallery</title>
  <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
  <header class="main-header">
-  <div class="main-nav">
+  <!-- <div class="main-nav">
    <form id="searchfield">
     <input type="search" id="search" placeholder="Search images">
    </form>
-  </div>
+  </div> -->
+  <!-- remove margin-top 10px on line 19 -->
  </header>
 
  <div class="container">
@@ -36,13 +38,12 @@
  </div>
  <!-- MODAL WINDOW -->
  <div class="modal">
-   
-    <div class="modal-content">
-      <span class="close">&times;</span> 
-      <img class="modal-img" src="" alt="modal">
-    </div>
-    <img src="images/prev.png" class="prev" alt="prev">
-    <img src="images/next.png" class="next" alt="next">
+  <i class="fa fa-arrow-left prev" style="font-size:36px"></i>
+  <i class="fa fa-arrow-right next" style="font-size:36px"></i>
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img class="modal-img" src="photos/1.jpg" alt="modal">
+  </div>
 </div>
 
  <footer></footer>
