@@ -14,6 +14,7 @@ const search = document.querySelector('#search');
 /*==============
  EVENT LISTENERS
 ==============*/ 
+//OPENS AND DISPLAYS MODAL WINDOW WHEN ONE OF THE IMAGES IS CLICKED
 container.addEventListener('click', function(event) {
   if(event.target.classList.contains('img')){
     modal.classList.add('open');
@@ -21,12 +22,13 @@ container.addEventListener('click', function(event) {
   }
 })
 
+// // WHEN THE MODAL WINDOW IS OPEN IT WILL CHANGE IMAGES OR CLOSE THE MODAL WINDOW DEPENDING ON ICONS CLICKED
 modal.addEventListener('click', function(event){
-  //Closes modal
+  //CLOSES THE MODAL WINDOW
   if(event.target.classList.contains('close')){
     modal.classList.remove('open');
   }
-  //DOM Traversal next & previous button clicks
+  //DISPLAYS A DIFFERENT IMAGE WHEN next & previous IMAGES ARE CLICKED
   if(event.target.classList.contains('prev')){
     const prevImg = images.find((img) => img.src === modalImg.src);
     const currentImg = prevImg.previousElementSibling;
@@ -46,5 +48,4 @@ modal.addEventListener('click', function(event){
       modalImg.src = images[0].src; 
     }
   }
-
 })
