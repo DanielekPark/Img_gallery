@@ -82,7 +82,7 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 80%;
+  height: 50%;
   position: relative;
 }
 
@@ -103,7 +103,7 @@ footer {
 .modal-img {
   display: block;
   margin: 0 auto;
-  height: 250px;
+  height: 210px;
   width: 100%;
 }
 
@@ -138,6 +138,11 @@ footer {
     grid-row-gap: 30px;
   }
 
+  .prev,
+  .next {
+    top: 50%;
+  }
+
   .close {
     top: 100px;
   }
@@ -145,11 +150,25 @@ footer {
   .modal-img {
     height: 100%;
   }
+
+  .modal-content {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media (min-width: 1040px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .prev,
+  .next {
+    top: 60%;
+  }
+
+  .close {
+    top: 200px;
   }
 }
