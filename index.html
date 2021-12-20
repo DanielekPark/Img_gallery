@@ -2,49 +2,49 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Image gallery</title>
- <link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image gallery</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header class="main-header">
+    <div class="main-nav">
+      <input type="search" id="search" placeholder="Search images">
+    </div>
+  </header>
 
- <header class="main-header">
-  <div class="main-nav">
-    <input type="search" id="search" placeholder="Search images">
+  <div class="container">
+    <img src="photos/1.jpg" alt="Countryside" class="img" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+    <img src="photos/2.jpg" alt="Lake" class="img" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+    <img src="photos/3.jpg" alt="Mountain" class="img" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+    <img src="photos/4.jpg" alt="Iceberg" class="img"data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+    <img src="photos/5.jpg" alt="Canyon" class="img"data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+    <img src="photos/6.jpg" alt="Fall" class="img" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
+    <img src="photos/7.jpg" alt="Hills" class="img" data-title="I drove past this field yesterday, everything is so green!">
+    <img src="photos/8.jpg" alt="Oregon Coast" class="img" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+    <img src="photos/9.jpg" alt="Countryside-lane" class="img" data-title="Lane We enjoyed a quiet stroll down this countryside lane.">
+    <img src="photos/10.jpg" alt="Sunset" class="img" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
+    <img src="photos/11.jpg" alt="Cave" class="img" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+    <img src="photos/12.jpg" alt="Meadows" class="img" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." >
   </div>
- </header>
+  
+    <!-- MODAL WINDOW -->
+    <div class="modal">
+      <img class="prev" src="photos/prev.png">
+      <img class="next" src="photos/next.png">
+      <img class="close" src="photos/close.png">
+      <div class="modal-content">
+        <img class="modal-img" src="photos/1.jpg" alt="modal">
+        <p class="desc"></p>
+      </div>
+    </div>
 
- <div class="container">
-  <img src="photos/1.jpg" alt="Countryside" class="img" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
-  <img src="photos/2.jpg" alt="Lake" class="img" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
-  <img src="photos/3.jpg" alt="Mountain" class="img" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
-  <img src="photos/4.jpg" alt="Iceberg" class="img"data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
-  <img src="photos/5.jpg" alt="Canyon" class="img"data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
-  <img src="photos/6.jpg" alt="Fall" class="img" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
-  <img src="photos/7.jpg" alt="Hills" class="img" data-title="I drove past this field yesterday, everything is so green!">
-  <img src="photos/8.jpg" alt="Oregon Coast" class="img" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
-  <img src="photos/9.jpg" alt="Countryside-lane" class="img" data-title="Lane We enjoyed a quiet stroll down this countryside lane.">
-  <img src="photos/10.jpg" alt="Sunset" class="img" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
-  <img src="photos/11.jpg" alt="Cave" class="img" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
-  <img src="photos/12.jpg" alt="Meadows" class="img" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." >
- </div>
- <!-- MODAL WINDOW -->
- <div class="modal">
-  <img class="prev" src="photos/prev.png">
-  <img class="next" src="photos/next.png">
-  <img class="close" src="photos/close.png">
-  <div class="modal-content">
-    <img class="modal-img" src="photos/1.jpg" alt="modal">
-    <p class="desc"></p>
-  </div>
-</div>
+    <footer></footer>
 
- <footer></footer>
-
- <script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
