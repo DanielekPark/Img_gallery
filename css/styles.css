@@ -1,7 +1,7 @@
 /* ===================================== 
   BASE STYLES
 ======================================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:ital,wght@0,100;0,300;1,100&family=Roboto+Mono:wght@200&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 /* ===================================== 
-   MAIN HEADER
+    MAIN HEADER
 ======================================== */
 .main-header,
 .main-nav {
@@ -28,11 +28,14 @@ body {
   border: 1px solid #eaeaea;
   padding: 8px 15px;
   font-size: 14px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
   width: 300px;
-  font-family: 'Roboto-Mono';
   height: 38px;
+}
+
+.main-nav input,
+p {
+  font-family: 'Oswald', sans-serif;
 }
 
 /* ===================================== 
@@ -68,11 +71,11 @@ footer {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  left: 0;
+  z-index: 100;
   top: 0;
-  width: 100%;
+  left: 0;
   height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -83,9 +86,7 @@ footer {
 }
 
 .close {
-  color: black;
   font-size: 3rem;
-  font-weight: bold;
   position: absolute;
   top: 0;
   right: 10px;
@@ -99,7 +100,7 @@ footer {
 .modal-img {
   display: block;
   margin: 0 auto;
-  height: 210px;
+  height: 300px;
   width: 100%;
 }
 
@@ -123,7 +124,7 @@ footer {
 }
 
 /* ===================================== 
-   MEDIA QUERIES
+    MEDIA QUERIES
 ======================================== */
 @media (min-width: 768px) {
   .main-header {
@@ -134,13 +135,17 @@ footer {
     grid-row-gap: 30px;
   }
 
+  .main-nav input {
+    width: 500px;
+  }
+
   .prev,
   .next {
-    top: 50%;
+    top: 30%;
   }
 
   .close {
-    top: 100px;
+    top: 1rem;
   }
 
   .modal-img {
@@ -148,7 +153,7 @@ footer {
   }
 
   .desc {
-    padding-left: 5px;
+    text-align: center;
   }
 
   .modal-content {
@@ -159,17 +164,13 @@ footer {
 }
 
 @media (min-width: 1040px) {
+  .container,
+  .modal {
+    max-width: 1150px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .prev,
-  .next {
-    top: 60%;
-  }
-
-  .close {
-    top: 200px;
   }
 }
